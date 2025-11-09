@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS Forwarder"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background SMS Forwarding"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checking status..."
+        android:textSize="15sp"
+        android:padding="16dp"
+        android:background="#F5F5F5"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setup Steps:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/requestPermissionsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Grant SMS Permissions"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/disableBatteryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Disable Battery Optimization (Optional)"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/startServiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Start Background Service"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ℹ️  How it works:\n\n• Google Messages stays your default SMS app\n• This app runs silently in background\n• All incoming SMS automatically forwarded to emulator 5556\n• You'll still receive SMS normally\n• Works even when screen is off"
+        android:textSize="13sp"
+        android:padding="16dp"
+        android:background="#E3F2FD"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
